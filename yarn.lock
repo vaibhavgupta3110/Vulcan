@@ -19,13 +19,14 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
+"@types/graphql@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.10.2.tgz#d7c79acbaa17453b6681c80c34b38fcb10c4c08c"
+  integrity sha512-Ayw0w+kr8vYd8DToiMXjcHxXv1ljWbqX2mnLwXDxkBgog3vywGriC0JZ+npsuohKs3+E88M8OOtobo4g0X3SIA==
+
 "@types/graphql@^0.8.0", "@types/graphql@^0.8.5", "@types/graphql@^0.8.6":
   version "0.8.6"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.8.6.tgz#b34fb880493ba835b0c067024ee70130d6f9bb68"
-
-"@types/graphql@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.9.0.tgz#fccf859f0d2817687f210737dc3be48a18b1d754"
 
 "@types/isomorphic-fetch@0.0.33":
   version "0.0.33"
@@ -148,20 +149,29 @@ apollo-client@^1.0.0-rc.2:
     "@types/graphql" "^0.8.0"
     "@types/isomorphic-fetch" "0.0.33"
 
-apollo-client@^1.0.0-rc.6:
-  version "1.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-1.0.0-rc.8.tgz#30105eb33f59ecab63f493177416d720ba0a8fd9"
+apollo-client@^1.0.1:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-1.9.3.tgz#37000b3c801f4571b7b089739e696a158896aeab"
+  integrity sha512-JABKKbqvcw8DJm3YUkEmyx1SK74i+/DesEtAtyocJi10LLmeMQYQFpg8W3BG1tZsYEQ3owEmPbsdNGTly+VOQg==
   dependencies:
-    graphql "^0.9.1"
+    apollo-link-core "^0.5.0"
+    graphql "^0.10.0"
     graphql-anywhere "^3.0.1"
     graphql-tag "^2.0.0"
     redux "^3.4.0"
     symbol-observable "^1.0.2"
     whatwg-fetch "^2.0.0"
   optionalDependencies:
-    "@types/async" "^2.0.31"
-    "@types/graphql" "^0.9.0"
-    "@types/isomorphic-fetch" "0.0.33"
+    "@types/graphql" "0.10.2"
+
+apollo-link-core@^0.5.0:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/apollo-link-core/-/apollo-link-core-0.5.4.tgz#8efd4cd747959872a32f313f0ccfc2a76b396668"
+  integrity sha512-OxL0Kjizb0eS2ObldDqJEs/tFN9xI9RZuTJcaszgGy+xudoPXhIMCHMr7hGZhy0mK+U+BbBULZJw4YQU4J0ODQ==
+  dependencies:
+    graphql "^0.10.3"
+    graphql-tag "^2.4.2"
+    zen-observable-ts "^0.4.4"
 
 argparse@^1.0.7:
   version "1.0.9"
@@ -691,9 +701,10 @@ cliui@^2.1.0:
     right-align "^0.1.1"
     wordwrap "0.0.2"
 
-clone@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.2.tgz#260b7a99ebb1edfe247538175f783243cb19d149"
+clone@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
+  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
 
 clone@~2.1.0:
   version "2.1.0"
@@ -869,6 +880,11 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
 
+crypto-js@^3.1.9-1:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.3.0.tgz#846dd1cce2f68aacfa156c8578f926a609b7976b"
+  integrity sha512-DIT51nX0dCfKltpRiXV+/TVZq+Qq2NgF4644+K7Ttnla7zEzqc+kjJyiB96BHNyUTBxyjzRcZYpUdZa+QAqi6Q==
+
 crypto-token@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/crypto-token/-/crypto-token-1.0.1.tgz#27c6482faf3b63c2f5da11577f8304346fe797a5"
@@ -935,7 +951,7 @@ deep-equal@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
 
-deep-extend@0.4.1, deep-extend@^0.4.0, deep-extend@^0.4.1:
+deep-extend@^0.4.0:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.1.tgz#efe4113d08085f4e6f9687759810f807469e2253"
 
@@ -1472,6 +1488,11 @@ extend@3, extend@^3.0.0, extend@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
 
+extend@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
+  integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
+
 extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
@@ -1712,6 +1733,11 @@ graphql-tag@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.0.0.tgz#f3efe3b4d64f33bfe8479ae06a461c9d72f2a6fe"
 
+graphql-tag@^2.4.2:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.11.0.tgz#1deb53a01c46a7eb401d6cb59dec86fa1cccbffd"
+  integrity sha512-VmsD5pJqWJnQZMUeRwrDhfgoyqcfwEkvtpANqcoUG8/tOLkwNgU9mzub/Mc78OJMhHjx7gfAMTxzdG43VGg3bA==
+
 graphql-tools@^0.10.1:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-0.10.1.tgz#274aa338d50b1c0b3ed6936eafd8ed3a19ed1828"
@@ -1735,6 +1761,13 @@ graphql-tools@^0.8.4:
 graphql-type-json@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/graphql-type-json/-/graphql-type-json-0.1.4.tgz#89f13f5d32ce08c9a76c79fdf9c1968384d81a4e"
+
+graphql@^0.10.0, graphql@^0.10.3:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.10.5.tgz#c9be17ca2bdfdbd134077ffd9bbaa48b8becd298"
+  integrity sha512-Q7cx22DiLhwHsEfUnUip1Ww/Vfx7FS0w6+iHItNuN61+XpegHSa3k5U0+6M5BcpavQImBwFiy0z3uYwY7cXMLQ==
+  dependencies:
+    iterall "^1.1.0"
 
 graphql@^0.9.1:
   version "0.9.1"
@@ -2126,6 +2159,11 @@ iterall@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.0.3.tgz#e0b31958f835013c323ff0b10943829ac69aa4b7"
 
+iterall@^1.1.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
+  integrity sha512-QZ9qOMdF+QLHxy1QIpUHUU1D5pS2CG2P69LF6L6CPjPYA/XMOmKV3PZpawHoAjHNyB0swdVTRxdYT4tbBbxqwg==
+
 jodid25519@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/jodid25519/-/jodid25519-1.0.2.tgz#06d4912255093419477d425633606e0e90782967"
@@ -2245,6 +2283,11 @@ lodash-es@^4.2.0, lodash-es@^4.2.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
 
+lodash._reinterpolate@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
+  integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
+
 lodash.cond@^4.3.0:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/lodash.cond/-/lodash.cond-4.5.2.tgz#f471a1da486be60f6ab955d17115523dd1d255d5"
@@ -2256,6 +2299,16 @@ lodash.find@4.6.0:
 lodash.flatten@^4.2.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
+
+lodash.foreach@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
+  integrity sha1-Gmo16s5AEoDH8G3d7DUWWrJ+PlM=
+
+lodash.isempty@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.isempty/-/lodash.isempty-4.4.0.tgz#6f86cbedd8be4ec987be9aaf33c9684db1b31e7e"
+  integrity sha1-b4bL7di+TsmHvpqvM8loTbGzHn4=
 
 lodash.isequal@^4.1.1:
   version "4.5.0"
@@ -2269,6 +2322,11 @@ lodash.memoize@4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
+lodash.merge@^4.6.0:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
 lodash.pick@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
@@ -2277,11 +2335,31 @@ lodash.pickby@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.pickby/-/lodash.pickby-4.6.0.tgz#7dea21d8c18d7703a27c704c15d3b84a67e33aff"
 
+lodash.template@^4.4.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
+  integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
+  dependencies:
+    lodash._reinterpolate "^3.0.0"
+    lodash.templatesettings "^4.0.0"
+
+lodash.templatesettings@^4.0.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-4.2.0.tgz#e481310f049d3cf6d47e912ad09313b154f0fb33"
+  integrity sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
+  dependencies:
+    lodash._reinterpolate "^3.0.0"
+
+lodash.without@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.without/-/lodash.without-4.4.0.tgz#3cd4574a00b67bae373a94b748772640507b7aac"
+  integrity sha1-PNRXSgC2e643OpS3SHcmQFB7eqw=
+
 lodash@^3.10.1, lodash@^3.2.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.5.1, lodash@~4.17.2:
+lodash@^4.0.0, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.2:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -2347,12 +2425,13 @@ merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
 
-message-box@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/message-box/-/message-box-0.0.2.tgz#38ee3de4bcddb0bcb883a7db2468cac81fd76f79"
+message-box@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/message-box/-/message-box-0.1.1.tgz#778565854cd4527d267373fc20124de187298dac"
+  integrity sha1-d4VlhUzUUn0mc3P8IBJN4Ycpjaw=
   dependencies:
-    deep-extend "^0.4.1"
-    handlebars "^4.0.5"
+    lodash.merge "^4.6.0"
+    lodash.template "^4.4.0"
 
 meteor-node-stubs@^0.2.3:
   version "0.2.4"
@@ -2443,11 +2522,15 @@ moment@^2.13.0, moment@^2.8.2:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
 
-mongo-object@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/mongo-object/-/mongo-object-0.0.1.tgz#8cad470e5925f76b5d79b0988c5918f54904e170"
+mongo-object@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/mongo-object/-/mongo-object-0.0.2.tgz#3dcabaf9146e1afb63a809406146b8544d28964a"
+  integrity sha512-FI827BgRJvEZ+Uef+qWIsXu93+8pok26b5LZO2Nc3T6XRg/IrkvV1okxyez+Kz/psfV3n5WqqtR+ySg2Q7mSPg==
   dependencies:
-    lodash "^4.5.1"
+    lodash.foreach "^4.5.0"
+    lodash.isempty "^4.4.0"
+    lodash.isobject "^3.0.2"
+    lodash.without "^4.4.0"
 
 ms@0.7.1:
   version "0.7.1"
@@ -3226,15 +3309,16 @@ shelljs@^0.7.5:
     interpret "^1.0.0"
     rechoir "^0.6.2"
 
-simpl-schema@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/simpl-schema/-/simpl-schema-0.2.3.tgz#c1e5728aef88a7afaea7db953a443f1918763adb"
+simpl-schema@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/simpl-schema/-/simpl-schema-0.3.2.tgz#2c75444e9378505ac525219394de063ce4f6f068"
+  integrity sha1-LHVETpN4UFrFJSGTlN4GPOT28Gg=
   dependencies:
-    clone "1.0.2"
-    deep-extend "0.4.1"
-    message-box "0.0.2"
-    mongo-object "0.0.1"
-    underscore "1.8.3"
+    clone "^2.1.1"
+    extend "^3.0.1"
+    message-box "^0.1.1"
+    mongo-object "^0.0.2"
+    underscore "^1.8.3"
 
 simple-fmt@~0.1.0:
   version "0.1.0"
@@ -3568,7 +3652,12 @@ underscore.string@^3.2.3:
     sprintf-js "^1.0.3"
     util-deprecate "^1.0.2"
 
-underscore@1.8.3, underscore@^1.8.3:
+underscore@^1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.12.1.tgz#7bb8cc9b3d397e201cf8553336d262544ead829e"
+  integrity sha512-hEQt0+ZLDVUMhebKxL4x1BTtDY7bavVofhZ9KZ4aI26X9SRaE+Y3m83XUL1UP2jn8ynjndwCCpEHdUG+9pP1Tw==
+
+underscore@^1.8.3:
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
@@ -3729,3 +3818,8 @@ yargs@~3.27.0:
     os-locale "^1.4.0"
     window-size "^0.1.2"
     y18n "^3.2.0"
+
+zen-observable-ts@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/zen-observable-ts/-/zen-observable-ts-0.4.4.tgz#c244c71eaebef79a985ccf9895bc90307a6e9712"
+  integrity sha512-SNVY1sWWhoe7FwFmHpD9ERi+7Mhhj3+JdS0BGy2UxLIg7cY+3zQbyZauQCI6DN6YK4uoKNaIm3S7Qkqi1Lr+Fw==
