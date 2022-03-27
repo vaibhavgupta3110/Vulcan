@@ -46,7 +46,7 @@
     "optics-agent": "^1.0.5",
     "react": "^15.4.1",
     "react-addons-pure-render-mixin": "^15.4.1",
-    "react-apollo": "^1.0.0-rc.3",
+    "react-apollo": "^1.0.0",
     "react-bootstrap": "^0.30.7",
     "react-bootstrap-datetimepicker": "0.0.22",
     "react-cookie": "^0.4.6",
